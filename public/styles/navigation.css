@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+nav {
+    width:100vw;
+    position:relative;
+    min-height: 100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1.5px 0px 0px rgba(202, 206, 209, 1);
+    filter: drop-shadow(0px 1px 4px rgba(202, 206, 209, 1));
+}
+
+nav .left {
+    display: flex;
+    align-items: center;
+    gap:50px;
+    margin-left: 50px;
+}
+
+nav .right {
+    margin-right: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+}
+
+nav ul a {
+    color: #1C375B;
+    text-decoration: none;
+    font-family: "Exo 2", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    white-space: nowrap;
+    transition: letter-spacing 0.3s;
+}
+
+nav ul a:hover {
+    letter-spacing: 0.15em;
+}
+
+.pol-med_logo {
+    width: 168px;
+    border-radius: 50%;
+    transition: width 0.3s;
+}
+
+.pol-med_logo:hover {
+    width:175px;
+}
+
+.languageButton {
+    color: #1C375B;
+    font-family: "Exo 2", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    border: 1px solid #CACED1;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: letter-spacing 0.3s, background-color 0.3s;
+}
+
+.languageButton:hover {
+    letter-spacing: 0.15em;
+    background-color: #F5F5F5;
+}
+
+.flag {
+    width: 25px;
+    filter: drop-shadow(0px 1px 4px rgba(202, 206, 209, 1));
+}
+
+.arrow {
+    width: 10px;
+    margin-left: 10px;
+}
+
+.languageDropdown {
+    position:absolute;
+    height:100px;
+    bottom: -130px;
+    right:60px;
+
+    color: #1C375B;
+    font-family: "Exo 2", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.1em;
+
+    border: 1px solid #CACED1;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+
+.activePage {
+    color: #8E2C25;
+}
+
+@media (max-width:1150px) {
+    nav ul {
+        flex-wrap: wrap;
+        gap: 15px 50px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width:700px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav .left {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 15px;
+    }
+
+    nav ul {
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    nav .right{
+        margin: 0 0 0 0;
+        align-self: end;
+    }
+
+    .languageButton {
+        border-bottom: 0;
+        border-right: 0;
+        border-radius: 10px 0 0 0;
+        margin: 0;
+        gap: 10px;
+    }
+
+    .languageName {
+        display: none;
+    }
+
+    .pol-med_logo {
+        margin-top: 15px;
+    }
+
+    .arrow {
+        margin: 0;
+    }
+}

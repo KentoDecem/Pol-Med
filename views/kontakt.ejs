@@ -1,0 +1,36 @@
+<%- include('partials/navigation.ejs', {activePage: 'kontakt'}) %>
+
+<section id="kontakt">
+
+    <h1>Skontaktuj się z nami</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus. Cras ullamcorper massa sit amet lacus egestas, ac ultrices nisi tincidunt. Nunc accumsan, ipsum sed dignissim feugiat, risus nisl egestas massa, in pulvinar neque leo ac lectus. Fusce aliquam risus sit amet sapien venenatis, eget faucibus enim ultricies. Fusce aliquam risus sit amet sapien venenatis, eget faucibus enim ultricies.</p>
+
+    <h2>Dane kontaktowe</h2>
+
+    <ul>
+        <li><strong>Adres:</strong> ul. Przykładowa 12, 00-001 Warszawa</li>
+        <li><strong>Telefon:</strong> +48 123 456 789</li>
+        <li><strong>Email:</strong> kontakt@przykladowa.pl</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus. Cras ullamcorper massa sit amet lacus egestas, ac ultrices nisi tincidunt. Nunc accumsan, ipsum sed dignissim feugiat, risus nisl egestas massa, in pulvinar neque leo ac lectus. Fusce aliquam risus sit amet sapien venenatis, eget faucibus enim ultricies. Fusce aliquam risus sit amet sapien venenatis, eget faucibus enim ultricies.</p>
+
+    <h2>Formularz kontaktowy</h2>
+
+    <form action="/wyslij-wiadomosc" method="post">
+        <label for="imie">Imię:</label>
+        <input type="text" id="imie" name="imie" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="wiadomosc">Wiadomość:</label>
+        <textarea id="wiadomosc" name="wiadomosc" required></textarea>
+
+        <button type="submit">Wyślij wiadomość</button>
+    </form>
+
+</section>
+
+<%- include('partials/footer.ejs') %>

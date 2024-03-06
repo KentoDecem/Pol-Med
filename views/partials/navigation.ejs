@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pol - Med</title>
+
+    
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <div class="left">
+
+        <!-- logo -->
+        <a href="/" class="<%= activePage === 'home' ? 'active' : '' %>"><img src="images/navigation/pol-med_logo.png" class="pol-med_logo"></a>
+
+        <!-- menu -->
+        <ul>
+            <li><a href="/edukacja" class="<%= activePage === 'edukacja' ? 'activePage' : '' %>">Edukacja</a></li>
+            <li><a href="/narzedzia" class="<%= activePage === 'narzedzia' ? 'activePage' : '' %>">Narzędzia</a></li>
+            <li><a href="/kontakt" class="<%= activePage === 'kontakt' ? 'activePage' : '' %>">Kontakt</a></li>
+            <li><a href="/o_nas" class="<%= activePage === 'o_nas' ? 'activePage' : '' %>">O nas</a></li>
+        </ul>
+
+    </div>
+
+    <div class="right">
+
+        <!-- language button -->
+        <div class="languageButton">
+            <img src="images/navigation/flag_pl.png" class="flag">
+            <span class="languageName">Polski</span>
+            <img src="images/navigation/arrow.png" class="arrow">
+        </div>
+
+    </div>
+
+
+    <!-- language dropdown -->
+    <div class="languageDropdown">
+        <span>English</span>
+        <span>Українська</span>
+    </div>
+</nav>
